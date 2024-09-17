@@ -2,4 +2,10 @@ Hola querido Lector,
 
 Esta es la historia de Cristiam Montoya, un joven de 20 años nacido en Bogotá, Colombia.
 
+<<<<<<< HEAD
 Hoy hablaremos de su vida y obra maestra no me gusta
+=======
+Todo inicia cuando uan pareja deciden tener un hijo.
+
+
+>>>>>>> parent of 4f3d9b9 (cambio de vida)
