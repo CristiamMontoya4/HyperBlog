@@ -13,13 +13,14 @@ body {
     color: white;
     font-weight: bold;
     margin: 0;
-    padding: 0.5em 0 0.5em 2em; 
+    padding: 0.5em 0 0.5em 3em; 
+    display: flex;
 }
 
 #cabecera #logo{
-    width: 20px;
+    width: 50px;
     vertical-align: middle;
-
+    padding: 0.5em 0.5em 0.5em 0;
 }
 
 #cabecera #tagline {
@@ -37,7 +38,14 @@ body {
 }
 
 #container h1{
-    font-size: 20px;
+    font-size: 30px;
+    padding-left: 1em;
+}
+
+#container span{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
 }
 
 #post {
