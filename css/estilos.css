@@ -54,6 +54,17 @@ body {
 
 }
 
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#post img {
+    width: 200px;
+    height: 200px;
+}
+
 #footer{
     background: #777;
     text-align: center;
