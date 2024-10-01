@@ -13,6 +13,7 @@ En este curso vemos de todo:
 * Flujo de trabajo en Github
 * Creado por el increible Platzi Team
 * Incluye ejemplos en Linux, Windows y Mac
+* Disponible para cualquier persona
 
 Tambien se puede enumerar las cosas más impresionantes:
 
