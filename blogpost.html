@@ -10,7 +10,7 @@
         <div id="container">
             <div id="cabecera">
                 <img id="logo" src="images/cohete.jpeg" />
-                <h1>Bienvenido a HyperBlog</h1>  
+                <h1>Bienvenido a HyperBlog, el blog del futuro</h1>  
                 <span id="tagline">Tu blog de cabecera</span>
             </div>
             <div id="post">
@@ -22,6 +22,180 @@
             <div id="footer">
                 Hecho con amor por Cristiam Montoya 😎 
             </div>
+            <script>
+                const restaurantFloors = [
+                    {
+                        sector_id: 1,
+                        sector_name: "Planta Baja",
+                        tables: [
+                            {
+                                id:1,
+                                table: '101',
+                                shape: 'circle',
+                                size: 'small',
+                                capacity: 6,
+                                status: 'empty', // opcional: cambiar estatus a combined
+                                combined_table: 0, //id mesa con la que se combinada
+                                position: {
+                                    x: -300,
+                                    y: -150
+                                },                 
+                            },
+                            {
+                                id:2,
+                                table: '102',
+                                shape: 'box',
+                                size: 'medium',
+                                capacity: 2,
+                                status: 'empty',
+                                combined_table: 3,
+                                position: {
+                                    x: 0,
+                                    y: -150
+                                }, 
+                            },
+                            {
+                                id:3,
+                                table: 3,
+                                shape: 'triangle',
+                                size: 'small',
+                                capacity: 4,
+                                status: 'empty',
+                                combined_table: 2,
+                                position: {
+                                    x: 300,
+                                    y: -150
+                                },
+                            }
+                        ],
+                        objects: [
+                            {
+                                id: 1,
+                                name: 'pared1',
+                                shape: 'rectangle',
+                                size: 'medium',
+                                position: {
+                                    x: 0,
+                                    y: 0
+                                },
+                            },
+                            {
+                                id: 2,
+                                name: 'columna1',
+                                shape: 'circle',
+                                size: 'small',
+                                position: {
+                                    x: 100,
+                                    y: 50
+                                },
+                            },
+                            {
+                                id: 3,
+                                name: 'columna2',
+                                shape: 'circle',
+                                size: 'big',
+                                position: {
+                                    x: 100,
+                                    y: 200
+                                },
+                            }
+                        ]
+                    },
+                    {
+                        sector_id: 2,
+                        sector_name: "Primer Piso",
+                        tables: [
+                            {
+                                id:4,
+                                table: 4,
+                                shape: 'circle',
+                                enable: false,
+                                size: 'big',
+                                capacity: 2,
+                                status: 'empty',
+                                x: -300,
+                                y: 50
+                            },
+                            {
+                                id:5,
+                                table: 5,
+                                shape: 'box',
+                                enable: false,
+                                size: 'big',
+                                capacity: 6,
+                                status: 'empty',
+                                x: 0,
+                                y: 50
+                            },
+                            {
+                                id:6,
+                                table: 6,
+                                shape: 'triangle',
+                                enable: false,
+                                size: 'big',
+                                capacity: 2,
+                                status: 'empty',
+                                x: 300,
+                                y: 50
+                            }
+                        ]
+                    },
+                    {
+                        sector_id: 3,
+                        sector_name: "Segundo Piso",
+                        tables: [
+                            {
+                                id:7,
+                                table: 7,
+                                shape: 'circle',
+                                enable: false,
+                                size: 'medium',
+                                capacity: 4,
+                                status: 'empty',
+                                x: -300,
+                                y: 0
+                            },
+                            {
+                                id:8,
+                                // table: 8,
+                                // shape: 'box',
+                                // enable: false,
+                                // size: 'medium',
+                                // capacity: 4,
+                                // status: 'empty',
+                                // x: 0,
+                                // y: 0
+                            },
+                            {
+                                id:9,
+                                table: 9,
+                                shape: 'triangle',
+                                enable: false,
+                                size: 'medium',
+                                capacity: 6,
+                                status: 'empty',
+                                x: 300,
+                                y: 0
+                            }
+                        ]
+                    },
+                    {
+                        sector_id: 4,
+                        sector_name: "Terraza",
+                        tables: []
+                    }
+                ];
+                console.log(restaurantFloors);
+
+
+                    let order_detail=` {
+                        "nombre" : "Juan",
+                        "Apellido": "Maradona"
+                    }`;
+                    
+                const parseJson = JSON.parse(order_detail);
+                console.log(parseJson.nombre);
+            </script>
         </div>
     </body>
 </html>
