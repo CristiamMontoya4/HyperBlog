@@ -27,8 +27,8 @@ Imagen para de las tecnologías, porque son bonitos logos:
 
 ## Logo Git:
 
-<img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" alt="logo-git" width="50%" />
+<img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" alt="logo-git" width="200px" height="200px" />
 
 ## Logo GitHub:
 
-<img src="https://pngimg.com/uploads/github/github_PNG84.png" alt="logo-git" width="50%" />
+<img src="https://pngimg.com/uploads/github/github_PNG84.png" alt="logo-git" width="200px" height="200px" />
