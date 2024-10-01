@@ -11,7 +11,10 @@ Un blog increiblke para el curso de [Git y GitHub](https://platzi.com/cursos/git
 En este curso vemos de todo:
 * Todos los comando de git
 * Flujo de trabajo en Github
+* Creado por el increible Platzi Team
+
 Tambien se puede enumerar las cosas más impresionantes:
+
 1. Volver al pasado de un proyecto
 2. Crear nuevas versiones del proyecto, para después unirlas
 3. Múltiples trucos, para distintas situaciones, más de las que puedas imaginar 🤯
