@@ -12,6 +12,7 @@ En este curso vemos de todo:
 * Todos los comando de git
 * Flujo de trabajo en Github
 * Creado por el increible Platzi Team
+* Incluye ejemplos en Linux, Windows y Mac
 
 Tambien se puede enumerar las cosas más impresionantes:
 
