@@ -5,25 +5,46 @@ import java.util.List;
 public class Departamento {
     private String nombre;
     private String oficina;
-    private float presupuesto;
-   // private Universidad universidad;
+    private double presupuesto;
+    private Universidad universidad;
     private List<Curso> cursos;
     private List<Profesor> profesores;
 
-    public Departamento(String nombre, String oficina, float presupuesto) {
+    public Departamento(String nombre, String oficina, double presupuesto) {
         this.nombre = nombre;
         this.oficina = oficina;
         this.presupuesto = presupuesto;
+        this.profesores = new ArrayList<>();
+        this.cursos = new ArrayList<>();
+    }
+
+    public void setUniversidad(Universidad universidad) {
+        this.universidad = universidad;
+    }
+
+    public void agregarProfesor(Profesor profesor) {
+        if (!this.profesores.contains(profesor)) {
+            this.profesores.add(profesor);
+            profesor.setDepartamento(this);
+        }
     }
     
-    public void agregarCurso(double codigo, String nombre, int creditos, String horario, Profesor profesor){
-        Curso cur1 = new Curso(codigo, nombre, creditos, horario, profesor);
-        cursos.add(cur1);
+    public void removerProfesor(Profesor profesor) {
+        this.profesores.remove(profesor);
+        if (profesor.getDepartamento() == this) {
+            profesor.setDepartamento(null);
+        }
     }
-    
-    public void agregarProfesor(Profesor profesor){
-        profesores.add(profesor);
+
+    public void agregarCurso(Curso curso) {
+        this.cursos.add(curso);
+        curso.setDepartamento(this);
     }
+    public String getNombre() { return nombre; }
+    public List<Profesor> getProfesores() { return profesores; }
+    public List<Curso> getCursos() { return cursos; }
     
-    
+    public void limpiarCursos() {
+        this.cursos.clear(); 
+    }
 }
